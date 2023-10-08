@@ -47,19 +47,13 @@ function openLink() {
               • Promoted and organized Chinese culture with the use of video editing over social
               media and general body meetings to introduce the organization to all students<br /><br />
               Videos:<br />
-              <a
-                href="https://www.youtube.com/watch?v=3BcfsFQUjKI&t=40s&ab_channel=VTCAS"
-                target="_blank"
-              >
+              <a href="https://www.youtube.com/watch?v=3BcfsFQUjKI" target="_blank">
                 <span style="color: rgb(150, 150, 250); text-decoration: underline"
                   >Semester Recap Video</span
                 >
               </a>
               <br />
-              <a
-                href="https://www.youtube.com/watch?v=wgVRfQNqEck&t=120s&ab_channel=VTCAS"
-                target="_blank"
-              >
+              <a href="https://www.youtube.com/watch?v=wgVRfQNqEck" target="_blank">
                 <span style="color: rgb(150, 150, 250); text-decoration: underline"
                   >Senior Video</span
                 >
