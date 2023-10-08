@@ -72,7 +72,7 @@ function openContactMe() {
         <div class="about">
           <div class="about-top">
             <div class="about-title">Hey, I'm</div>
-            <div class="about-name">Huan Tran</div>
+            <div class="about-name">Huan Trannnn</div>
           </div>
           <div class="about-me">
             I am a fourth-year at
