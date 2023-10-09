@@ -38,7 +38,7 @@ async function sendEmail() {
   }
 
   axios
-    .post('http://localhost:8080/data', information)
+    .post('https://app-mw7s.onrender.com/data', information)
     .then((response) => {
       console.log(response.data.message)
     })
