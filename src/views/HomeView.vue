@@ -8,7 +8,11 @@ import CasCard from '@/components/InfoCards/Organizations/CasCard.vue'
 import VTCard from '@/components/InfoCards/Education/VTCard.vue'
 import FHSCard from '@/components/InfoCards/Education/FHSCard.vue'
 import { IconLinkedin } from '@iconify-prerendered/vue-dashicons'
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
+import { useStatusStore } from '@/stores/statusStore'
+import StatusPill from '@/components/StatusPill.vue'
+
+const statusStore = useStatusStore()
 
 // All button functions
 function refreshPage() {
@@ -45,10 +49,25 @@ const isContactMeOpen = ref(false)
 function openContactMe() {
   isContactMeOpen.value = true
 }
+
+watch(
+  () => statusStore.isSubmitted === true,
+  () => {
+    setTimeout(() => {
+      statusStore.active = false
+      setTimeout(() => {
+        statusStore.isSubmitted = false
+      }, 500)
+    }, 2000)
+  }
+)
 </script>
 
 <template>
   <div class="container">
+    <Transition name="status" appear>
+      <StatusPill v-show="statusStore.active" />
+    </Transition>
     <div class="top">
       <div class="left-buttons">
         <CustomButton primary class="contact-button" @click="openContactMe">
@@ -283,5 +302,12 @@ function openContactMe() {
     color: rgb(230, 230, 230);
     font-size: 14px;
   }
+}
+
+.status-leave-active {
+  transition: opacity 0.5s;
+}
+.status-leave-to {
+  opacity: 0;
 }
 </style>

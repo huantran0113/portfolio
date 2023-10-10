@@ -4,6 +4,9 @@ import CustomButton from '@/components/CustomButton.vue'
 import { ref, watch } from 'vue'
 import { useDebounceFn } from '@vueuse/core'
 import axios from 'axios'
+import { useStatusStore } from '@/stores/statusStore'
+
+const statusStore = useStatusStore()
 
 const emits = defineEmits<{ (e: 'closeModal'): void }>()
 
@@ -37,13 +40,16 @@ async function sendEmail() {
     message: bodyText.value
   }
 
+  statusStore.active = true
   axios
     .post('https://app-d265.onrender.com/data', information)
     .then((response) => {
       console.log(response.data.message)
+      statusStore.isSubmitted = true
     })
     .catch((error) => {
-      console.error('Error:', error)
+      console.log('Error: ' + error)
+      statusStore.isSubmitted = false
     })
 
   exitModal()
