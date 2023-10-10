@@ -11,6 +11,7 @@ import { IconLinkedin } from '@iconify-prerendered/vue-dashicons'
 import { ref, watch } from 'vue'
 import { useStatusStore } from '@/stores/statusStore'
 import StatusPill from '@/components/StatusPill.vue'
+import { IconHelpCircleOutline } from '@iconify-prerendered/vue-mdi'
 
 const statusStore = useStatusStore()
 
@@ -77,6 +78,13 @@ watch(
         <CustomButton class="linkedin-button" @click="openLinkedIn">
           <IconLinkedin />
         </CustomButton>
+        <div class="icon">
+          <IconHelpCircleOutline />
+          <div class="tooltip-text">
+            If submitting in the "Contact Me" section is taking too long to send, it means the
+            server is idle. Please refresh and try again in a couple minutes.
+          </div>
+        </div>
       </div>
       <div class="right-buttons">
         <button class="Home" @click="refreshPage">Home</button>
@@ -175,6 +183,40 @@ watch(
           border-color: rgb(200, 200, 200);
           color: white;
           background-color: rgb(140, 140, 250);
+        }
+      }
+      .icon {
+        svg {
+          display: flex;
+          justify-content: start;
+          color: rgb(230, 230, 230);
+          height: 25px;
+          width: 25px;
+          &:hover {
+            color: rgb(125, 125, 250);
+          }
+        }
+        .tooltip-text {
+          transition: all ease-in-out 0.2s;
+          transform: scale(0);
+          opacity: 0;
+          position: fixed;
+          z-index: 1;
+          color: black;
+          background-color: rgb(230, 230, 230);
+          padding: 12px;
+          font-size: 13px;
+          border-radius: 4px;
+          border-width: 1px;
+          width: 275px;
+          max-height: 125px;
+          pointer-events: none;
+          overflow-y: hidden;
+          margin-top: 10px;
+        }
+        &:hover .tooltip-text {
+          transform: scale(1);
+          opacity: 100%;
         }
       }
     }
