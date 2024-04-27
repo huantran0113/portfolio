@@ -352,4 +352,27 @@ watch(
 .status-leave-to {
   opacity: 0;
 }
+
+@media (max-width: 960px) {
+  .top {
+    zoom: 70%;
+    .left-buttons {
+      width: 100%;
+    }
+    .right-buttons {
+      visibility: hidden;
+    }
+  }
+  .middle {
+    zoom: 30%;
+    margin-top: 100px;
+  }
+  .bottom {
+    margin-top: 550px;
+    zoom: 50%;
+  }
+  .modal-background {
+    zoom: 40%;
+  }
+}
 </style>
