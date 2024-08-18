@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MyPicture from '@/assets/MyPicture.jpg'
+import MyPicture from '@/assets/MyPicture2.jpg'
 import CustomButton from '@/components/CustomButton.vue'
 import ContactMeModal from '@/components/ContactMeModal.vue'
 import CodeBrainiacCard from '@/components/InfoCards/Experience/CodeBrainiacCard.vue'
@@ -42,7 +42,7 @@ function openLinkedIn() {
 
 function openResume() {
   const resumeURL =
-    'https://drive.google.com/file/d/176FbkajKBJVKyMH04zGGCPro38uD38pm/view?usp=sharing'
+    'https://drive.google.com/file/d/1DY6GxblvwY8xqsRqieYelZ6TL6hcm5Mm/view?usp=sharing'
   window.open(resumeURL, '_blank')
 }
 
@@ -102,11 +102,11 @@ watch(
             <div class="about-name">Huan Tran</div>
           </div>
           <div class="about-me">
-            I am a fourth-year at
-            <span style="color: rgb(150, 150, 250)">Virginia Tech</span> majoring in
-            <span style="color: rgb(150, 150, 250)">Computer Science</span> and minoring in
-            <span style="color: rgb(150, 150, 250)">Mathematics</span>. I am graduating in May 2024
-            with a <span style="color: rgb(150, 150, 250)">Bachelor's of Science.</span> I am very
+            I am a graduate at
+            <span style="color: rgb(150, 150, 250)">Virginia Tech</span> who majored in
+            <span style="color: rgb(150, 150, 250)">Computer Science</span> and minored in
+            <span style="color: rgb(150, 150, 250)">Mathematics</span>. I graduated in May 2024 with
+            a <span style="color: rgb(150, 150, 250)">Bachelor's of Science.</span> I am very
             passionate about creating innovative applications through front-end and back-end
             technology.
           </div>

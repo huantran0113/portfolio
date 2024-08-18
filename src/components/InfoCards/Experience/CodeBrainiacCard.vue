@@ -28,7 +28,7 @@ function openLink() {
           <div class="details-button">
             <CustomButton primary @click="isFlipped = !isFlipped">DETAILS</CustomButton>
           </div>
-          <div class="date">September 2023 - Present</div>
+          <div class="date">September 2023 - May 2024</div>
         </div>
       </div>
       <div class="card-back">
