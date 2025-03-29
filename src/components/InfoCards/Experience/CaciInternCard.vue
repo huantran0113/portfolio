@@ -22,25 +22,20 @@ function openLink() {
             <div class="title">CACI International</div>
             <div class="description">
               <div class="desc">Software Engineer</div>
+              <div class="desc2">Intern</div>
             </div>
           </div>
-          <div class="details-button-wrapper">
-            <CustomButton
-              class="details-button"
-              primary
-              @click="isFlipped = !isFlipped"
-              :class="{ disabled: true }"
-              >DETAILS</CustomButton
-            >
+          <div class="details-button">
+            <CustomButton primary @click="isFlipped = !isFlipped">DETAILS</CustomButton>
           </div>
-          <div class="date">June 2024 - Present</div>
+          <div class="date">May 2023 - August 2023</div>
         </div>
       </div>
-      <!-- <div class="card-back"> -->
-      <!-- <CustomButton class="back-button" @click="isFlipped = !isFlipped">
+      <div class="card-back">
+        <CustomButton class="back-button" @click="isFlipped = !isFlipped">
           <IconBack />
-        </CustomButton> -->
-      <!-- <div class="text">
+        </CustomButton>
+        <div class="text">
           <div class="location">
             <span style="color: rgb(150, 150, 250)">Location: </span> Sterling, VA
           </div>
@@ -55,8 +50,8 @@ function openLink() {
               Java<br />• JavaScript/TypeScript<br />• HTML<br />• CSS
             </div>
           </div>
-        </div> -->
-      <!-- </div> -->
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -180,7 +175,7 @@ function openLink() {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      gap: 12px;
+      gap: 5px;
       .title {
         color: rgb(230, 230, 230);
         user-select: none;
@@ -205,16 +200,9 @@ function openLink() {
         }
       }
     }
-    .details-button-wrapper {
-      padding-top: 27px;
+    .details-button {
+      padding-top: 10px;
       padding-bottom: 10px;
-      .details-button {
-        &.disabled {
-          background-color: grey;
-          border-style: none;
-          pointer-events: none;
-        }
-      }
     }
     .date {
       color: rgb(175, 175, 175);

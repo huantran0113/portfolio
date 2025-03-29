@@ -45,14 +45,13 @@ function openLink() {
               College of Engineering:<br />
               • Major: Computer Science<br />
               • Minor: Mathematics<br />
-              • Overall GPA: 3.44/4.00<br />
-              • In-Major GPA: 3.66/4.00<br /><br />
+              • Overall GPA: 3.46/4.00<br />
+              • In-Major GPA: 3.64/4.00<br /><br />
               • Relevant Courses:<br />
               - Softw Design & Data Structures<br />
               - Computer Organization<br />
               - Data Structures & Algorithms<br />
               - Computer Systems<br /><br />
-              <span style="display: flex; justify-content: center">Expected May 2024</span>
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@ import MyPicture from '@/assets/MyPicture2.jpg'
 import CustomButton from '@/components/CustomButton.vue'
 import ContactMeModal from '@/components/ContactMeModal.vue'
 import CodeBrainiacCard from '@/components/InfoCards/Experience/CodeBrainiacCard.vue'
+import CaciInternCard from '@/components/InfoCards/Experience/CaciInternCard.vue'
 import CaciCard from '@/components/InfoCards/Experience/CaciCard.vue'
 import CasCard from '@/components/InfoCards/Organizations/CasCard.vue'
 import VTCard from '@/components/InfoCards/Education/VTCard.vue'
@@ -42,7 +43,7 @@ function openLinkedIn() {
 
 function openResume() {
   const resumeURL =
-    'https://drive.google.com/file/d/1DY6GxblvwY8xqsRqieYelZ6TL6hcm5Mm/view?usp=sharing'
+    'https://drive.google.com/file/d/1twN-D5rKzhJJp-VTlV0XwmW1sOgDou1f/view?usp=sharing'
   window.open(resumeURL, '_blank')
 }
 
@@ -115,8 +116,9 @@ watch(
       <div class="experience-section" id="experience-section">
         <div class="experience">Experience</div>
         <div class="info-cards">
-          <CodeBrainiacCard></CodeBrainiacCard>
           <CaciCard></CaciCard>
+          <CodeBrainiacCard></CodeBrainiacCard>
+          <CaciInternCard></CaciInternCard>
         </div>
       </div>
       <div class="education-section" id="education-section">
@@ -343,6 +345,7 @@ watch(
     background-color: #463b47;
     color: rgb(230, 230, 230);
     font-size: 14px;
+    pointer-events: none;
   }
 }
 
