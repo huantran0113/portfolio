@@ -43,7 +43,7 @@ function openLinkedIn() {
 
 function openResume() {
   const resumeURL =
-    'https://drive.google.com/file/d/1twN-D5rKzhJJp-VTlV0XwmW1sOgDou1f/view?usp=sharing'
+    'https://drive.google.com/file/d/1m2xqCI2qJIZ_IKoNIYxBxesX5uSBR_zq/view?usp=sharing'
   window.open(resumeURL, '_blank')
 }
 
